@@ -1,4 +1,5 @@
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 import bg1 from "../assets/bg1.jpg";
 import bg2 from "../assets/bg2.jpg";
@@ -92,9 +93,9 @@ export default function HomePage() {
         </div>
 
 
-        <section id="posts and news section">
+        <section id="posts and news section" className="lg:flex lg:gap-6">
 
-          <div id="left div">
+          <div id="left div" className="lg:w-7/12">
 
          <div className="bg-white p-2 my-4">
           <div className="bg-indigo-950 px-2 py-1"><p className="font-semibold text-white">Latest News</p></div>
@@ -254,7 +255,7 @@ export default function HomePage() {
 
           </div>
 
-         <div id="right div">
+         <div id="right div" className="lg:w-5/12">
           <div className="bg-white p-2 my-4">
             <div className="bg-indigo-950 px-2 py-1"><p className="font-semibold text-white">Editor's Pick</p></div>
           
@@ -308,6 +309,42 @@ export default function HomePage() {
 
           <p className="text-gray-500">You can unsubscribe us at any time</p>
 
+          <div className="bg-indigo-950 px-2 py-1 my-4"><p className="text-white font-semibold">Most Popular</p></div>
+
+          <div className="border-t-2 py-4 my-4 flex gap-2">
+            <div className="w-5/12"><img src={newsimg} alt="posts"/></div>
+            <div className="w-7/12">
+              <p className="my-1">Help Finding Information Online is so easy</p>
+              <p className="text-xs text-gray-500"><i class="fa-regular fa-user"></i> Mark Wiens <i class="fa-regular fa-calendar-days"></i> 03,April,2018 <i class="fa-regular fa-comment"></i> 06 Comments</p>
+            </div>
+          </div>
+
+          <div className="border-t-2 py-4 my-4 flex gap-2">
+            <div className="w-5/12"><img src={newsimg} alt="posts"/></div>
+            <div className="w-7/12">
+              <p className="my-1">Help Finding Information Online is so easy</p>
+              <p className="text-xs text-gray-500"><i class="fa-regular fa-user"></i> Mark Wiens <i class="fa-regular fa-calendar-days"></i> 03,April,2018 <i class="fa-regular fa-comment"></i> 06 Comments</p>
+            </div>
+          </div>
+
+          <div className="border-t-2 py-4 my-4 flex gap-2">
+            <div className="w-5/12"><img src={newsimg} alt="posts"/></div>
+            <div className="w-7/12">
+              <p className="my-1">Help Finding Information Online is so easy</p>
+              <p className="text-xs text-gray-500"><i class="fa-regular fa-user"></i> Mark Wiens <i class="fa-regular fa-calendar-days"></i> 03,April,2018 <i class="fa-regular fa-comment"></i> 06 Comments</p>
+            </div>
+          </div>
+
+          <div className="border-t-2 py-4 my-4 flex gap-2">
+            <div className="w-5/12"><img src={newsimg} alt="posts"/></div>
+            <div className="w-7/12">
+              <p className="my-1">Help Finding Information Online is so easy</p>
+              <p className="text-xs text-gray-500"><i class="fa-regular fa-user"></i> Mark Wiens <i class="fa-regular fa-calendar-days"></i> 03,April,2018 <i class="fa-regular fa-comment"></i> 06 Comments</p>
+            </div>
+          </div>
+
+
+
           <div className="bg-black text-white p-2 my-4">Social Networks</div>
 
           <div className="bg-blue-800 text-white p-2 my-4"><i class="fa-brands fa-facebook-f mx-2 border-r pr-2"></i><span className="px-4 border-r">983 Likes</span><a href="/" className="pl-4">Like our page</a></div>
@@ -324,11 +361,9 @@ export default function HomePage() {
 
         </section>
 
-
-
-
-
         </section>
+
+        <Footer/>
 
         
 
